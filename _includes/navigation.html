@@ -1,14 +1,7 @@
-<nav class="main-nav">
-    <ul>
-        {% for page in site.pages %}
-        {% if page.url != '/feed.xml' and page.url != '/' %}
-        <li>
-            <a href="{{site.baseurl | append: page.url }}">
-            <span class="title">{{ page.title }}</span>
-            <span class="date">{{ page.date | date_to_string }}</span>
-            </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
+<nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}">
+        {{ item.name }}
+      </a>
+    {% endfor %}
 </nav>

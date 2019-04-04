@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    width: 45%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: var(--font-size-h1, 30px);
+}
+
+h3{
+    font-size: var(--font-size-h3, 20px);
+    font-style: italic;
+}
+
+p{    
+    font-size: var(--font-size-p, 16px);
+}

@@ -16,10 +16,29 @@
 title: CSS Advanced
 description: This is scary, but awesome!
 destination: docs
-baseurl: "/CSS_Advanced"
+baseurl: ""
+# baseurl: "/CSS_Advanced"
 url: ""
-twitter_username: Silenci0
 github_username: Silenci0
+collections:
+  homeworks:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "homeworks"
+    values:
+      layout: "homework"
+  # - scope:
+  #     path: ""
+  #     type: "description"
+  #   values:
+  #     layout: "description"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
 
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
 # Build settings

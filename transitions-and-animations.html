@@ -1,0 +1,13 @@
+---
+layout: page
+title: Transitions-and-Animations
+---
+<h1>Transitions and Animations</h1>
+
+<ul>
+    {% for var in site.homeworks %}
+    {% if var.path contains 'transitions-and-animations' and var.type != 'solution' %}
+      <li><a href="{{ var.url }}">{{ var.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>

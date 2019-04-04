@@ -1,0 +1,9 @@
+@import url('variables.css');
+@import url('layout.css');
+
+
+:root{
+    --font-size-h1: 30px;
+    --font-size-h3: 20px;
+    --font-size-p: 16px;
+}

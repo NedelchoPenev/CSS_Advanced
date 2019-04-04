@@ -16,7 +16,7 @@ gulp.task("css", function() {
 });
 
 gulp.task("jekyll", function() {
-	return child.spawn("bundle.bat", ["exec", "jekyll.bat", "build"], { stdio: "inherit" });
+	return child.spawn("bundle.bat", ["exec", "jekyll.bat", "build", '--incremental'], { stdio: "inherit" });
 });
 
 gulp.task("watch", function() {
@@ -34,6 +34,8 @@ gulp.task("watch", function() {
 			"./*.html",
 			"./_includes/*.html",
 			"./_layouts/*.html",
+			"./_homeworks/**/*.html",
+			"./_topics/*.html"
 		]
 	).on('change', gulp.series('jekyll', 'css') );
 
