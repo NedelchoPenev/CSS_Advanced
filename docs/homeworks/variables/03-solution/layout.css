@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+
+html {
+    font-family: var(--font-family-PT-sans);
+}
+
+body {
+    width: 59%;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-family-PT-serif);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+section > p:nth-child(1) {
+    text-align: center;
+}

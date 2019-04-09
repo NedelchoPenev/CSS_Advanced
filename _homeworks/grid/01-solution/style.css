@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+div {
+    display: block;
+    background: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
