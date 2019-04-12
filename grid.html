@@ -1,0 +1,13 @@
+---
+layout: page
+title: Variables
+---
+<h1>Variables</h1>
+
+<ul>
+    {% for var in site.homeworks %}
+    {% if var.path contains 'grid' and var.type == 'description' %}
+      <li><a href="{{ var.url }}">{{ var.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>

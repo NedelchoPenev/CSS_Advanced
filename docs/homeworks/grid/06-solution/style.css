@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 7rem);
+    grid-template-rows: repeat(5, 7rem);
+    gap: 0.8rem;
+    width: 40%;
+    margin: 3rem auto;
+}
+
+.container > div {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.container > div:nth-child(odd) {
+    background: black;
+}
