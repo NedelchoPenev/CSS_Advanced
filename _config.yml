@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CSS Advanced
-description: This is scary, but awesome!
 destination: docs
 baseurl: ""
 # baseurl: "/CSS_Advanced"

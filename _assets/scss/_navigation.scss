@@ -1,0 +1,91 @@
+.navigation {
+    ul {
+        display: flex;
+    }
+
+    li {
+        display: block;
+        position: relative;
+    }
+
+    li:last-child {
+
+        i {
+            display: none;
+        }
+    }
+
+    a {
+        display: flex;
+        padding: 0.5em 1em;
+        color: $main-header-text-color;
+        background: rgba(0, 10, 10, 0.6);
+        transition: background 0.3s ease-in;
+        outline: none;
+
+        i {
+            padding: 0.2rem 1rem 0 0;
+        }
+    }
+
+    a:focus,
+    a:hover {
+        background: $primary-items-color;
+    }
+
+    a:focus {
+        text-decoration: underline;
+    }
+
+    & > ul ul li {
+        opacity: 0;
+        transform: translateY(-2rem);
+        transition: opacity 0.2s ease-in, transform 0.2s ease-out;
+        padding-top: 0.5em;
+    }
+
+    & > ul ul {
+        display: block;
+        width: 13rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+        pointer-events: none;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+        overflow: hidden;
+    }
+
+    li:hover > ul {
+        pointer-events: all;
+    }
+    
+    li:hover > ul > li {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    li:hover > ul > li:nth-child(2) { transition-delay: 0.08s; }
+    li:hover > ul > li:nth-child(3) { transition-delay: 0.16s; }
+    li:hover > ul > li:nth-child(4) { transition-delay: 0.24s; }
+    li:hover > ul > li:nth-child(5) { transition-delay: 0.32s; }
+    li:hover > ul > li:nth-child(6) { transition-delay: 0.40s; }
+    li:hover > ul > li:nth-child(7) { transition-delay: 0.48s; }
+
+    & > ul ul a {
+        padding: 0.5em 1.5em 0.5em 2em;
+    }
+}
+
+#toggle-main-nav-button {
+    color: #FFF;
+    display: none;
+}
+
+
+#toggle-main-nav {
+    position: absolute;
+    opacity: 0; 
+    pointer-events: none;
+}

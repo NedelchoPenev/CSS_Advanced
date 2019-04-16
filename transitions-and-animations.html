@@ -6,7 +6,7 @@ title: Transitions-and-Animations
 
 <ul>
     {% for var in site.homeworks %}
-    {% if var.path contains 'transitions-and-animations' and var.type != 'solution' %}
+    {% if var.path contains 'transitions-and-animations' and var.type == 'description' %}
       <li><a href="{{ var.url }}">{{ var.title }}</a></li>
     {% endif %}
     {% endfor %}

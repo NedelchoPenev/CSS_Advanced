@@ -1,7 +1,22 @@
-<nav>
+<label id="toggle-main-nav-button" for="toggle-main-nav">Menu</label>
+<nav class="navigation">
+  <ul>
     {% for item in site.data.navigation %}
+    <li>
       <a href="{{ item.link }}">
+        <i class="fa fa-fw fa-bars"></i>
         {{ item.name }}
       </a>
+      <ul>
+        {% for page in site.homeworks %}
+          {% if item.name == page.topic %}
+            <li>
+              <a href="{{ page.url }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
     {% endfor %}
+  </ul>
 </nav>

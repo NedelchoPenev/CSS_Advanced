@@ -1,0 +1,9 @@
+@mixin line {
+    content: '';
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    bottom: -8px;
+    left: 5%;
+    background: $primary-items-color;
+}

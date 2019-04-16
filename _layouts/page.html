@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
-  </head>
-  <body>
 
-    <header class="site-header">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
+</head>
 
-        <h1><a href="/">{{ site.title }}</a></h1>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <input type="checkbox" id="toggle-main-nav" />
+      <header class="site-header">
+        <div class="inner">
+          <div class="logo">
+            <a href="/"><img src="/images/css.png" alt="css-logo" /></a>
+          </div>
+          {% include navigation.html %}
+        </div>
+        <div class="title-center">
+          <h2 class="site-title title">CSS Advanced Homeworks</h2>
+        </div>
+        <img src="/images/CSS Advanced.png" alt="css-advanced" class="left">
+      </header>
 
-        {% include navigation.html %}
-
-    </header>
-        
-    <main class="site-content">
-
-      {{ content }}
-      
-    </main>
-
+      <main class="site-content">
+        {{ content }}
+      </main>
+    </div>
     <footer class="site-footer">
-
-      <p>&copy; SoftUni Homeworks by Silenci0</p>
-
+      <p>&copy; SoftUni CSS Homeworks by Silenci0</p>
     </footer>
-
-  </body>
+  </div>
+</body>
 </html>

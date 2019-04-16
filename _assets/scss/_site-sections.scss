@@ -1,0 +1,55 @@
+section {
+    margin: 1rem 7rem;
+    background: $section-background-color;
+    padding: 1rem;
+
+    p {
+        padding: $margin-or-padding-section-elements;
+    }
+}
+
+.skills {
+
+    .skill-elements {
+        padding: $margin-or-padding-section-elements;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3rem;
+            align-items: center;
+        }
+
+        i {
+            color: $primary-items-color;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.teacher {
+
+    .container {
+        display: flex;
+
+        .avatar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h6 {
+            padding: 1rem 0 0 0.5rem;
+        }
+
+        p {
+            padding-left: 0.5rem;
+        }
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
