@@ -3,7 +3,7 @@
   <ul>
     {% for item in site.data.navigation %}
     <li>
-      <a href="{{ item.link }}">
+      <a href="{{ site.baseurl }}{{ item.link }}">
         <i class="fa fa-fw fa-bars"></i>
         {{ item.name }}
       </a>
@@ -11,7 +11,7 @@
         {% for page in site.homeworks %}
           {% if item.name == page.topic %}
             <li>
-              <a href="{{ page.url }}">{{ page.title }}</a>
+              <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
