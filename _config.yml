@@ -29,11 +29,6 @@ defaults:
       type: "homeworks"
     values:
       layout: "homework"
-  # - scope:
-  #     path: ""
-  #     type: "description"
-  #   values:
-  #     layout: "description"
   - scope:
       path: ""
     values:

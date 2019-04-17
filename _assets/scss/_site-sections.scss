@@ -2,9 +2,31 @@ section {
     margin: 1rem 7rem;
     background: $section-background-color;
     padding: 1rem;
+    box-shadow: 0 0 10px 0 $primary-items-color;
+    border-radius: 5px;
 
-    p {
+    p, .task-container {
         padding: $margin-or-padding-section-elements;
+    }
+
+    .img-container {
+
+        padding: $margin-or-padding-section-elements;
+        width: 50%;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid $primary-items-color;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 3px;
+            transition: transform 0.5s ease-in;
+
+            &:hover {
+                transform: scale(1.8);
+            }
+        }
     }
 }
 

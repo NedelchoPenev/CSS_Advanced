@@ -1,13 +1,59 @@
 ---
 layout: page
-title: Variables
+title: Grid
 ---
-<h1>Variables</h1>
 
-<ul>
+<section>
+  <div class="title-center">
+    <h1 class="title">Grid</h1>
+  </div>
+  <p>
+      <strong>CSS Grid Layout</strong> is the most powerful layout system available in CSS. It is a <strong>2-dimensional system</strong>, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system. You work with Grid Layout by applying CSS rules both to a <strong>parent element</strong> (which becomes the Grid Container) <strong>and to that element's children</strong> (which become Grid Items). <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><i class="fas fa-external-link-alt"></i> Read more...</a>
+  </p>
+</section>
+
+<section class="gallery">
+    <div class="title-center">
+        <h4 class="title">Simple Gallery</h4>
+    </div>
+    <p>We can make simple and nice looking <strong>gallery with Grid.</strong></p>
+    <div class="gallery-container">
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/1.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/2.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/3.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/4.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/5.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/6.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/7.jpg" />
+        </div>
+        <div class="box">
+          <img src="{{ site.baseurl }}/images/gallery/8.jpg" />
+        </div>
+    </div>
+</section>
+
+<section class="topics">
+  <div class="title-center">
+    <h4 class="title">Homeworks</h4>
+  </div>
+  <ul>
     {% for var in site.homeworks %}
     {% if var.path contains 'grid' and var.type == 'description' %}
-      <li><a href="{{ site.baseurl }}{{ var.url }}">{{ var.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ var.url }}"><i class="fas fa-key"></i> {{ var.title }}</a></li>
     {% endif %}
     {% endfor %}
-</ul>
+  </ul>
+</section>

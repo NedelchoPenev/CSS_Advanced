@@ -2,12 +2,31 @@
 layout: page
 title: Variables
 ---
-<h1>Variables</h1>
+<section>
+	<div class="title-center">
+		<h1 class="title">Variables</h1>
+	</div>
+	<p>Most programming languages have support for <strong>variables</strong>. But sadly, CSS has lacked support for
+		native variables
+		from the very beginning. <strong>You write CSS?</strong> Then no variables for you. Well, except if you were
+		using a preprocessor
+		like Sass. Preprocessors like Sass sell the use of variables as a big add-on. A reason to try them. And you know
+		what? It’s a pretty darn good reason. <strong>Well the web is moving fast.</strong> And I’m glad to report that
+		<strong></strong>CSS now finally supports variables.</strong> While preprocessors support a lot more features,
+		the addition of CSS variables is a good one. <strong>This moves the web even closer to the future.</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank"><i class="fas fa-external-link-alt"></i> Read more...</a></p>
+</section>
 
-<ul>
-    {% for var in site.homeworks %}
-    {% if var.path contains 'variables' and var.type == 'description' %}
-      <li><a href="{{ site.baseurl }}{{ var.url }}">{{ var.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-</ul>
+<section class="topics">
+	<div class="title-center">
+		<h4 class="title">Homeworks</h4>
+	</div>
+	<div class="button-container">
+		<ul>
+			{% for var in site.homeworks %}
+			{% if var.path contains 'variables' and var.type == 'description' %}
+				<li><a href="{{ site.baseurl }}{{ var.url }}"><i class="fas fa-key"></i> {{ var.title }}</a></li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</section>
