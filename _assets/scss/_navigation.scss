@@ -6,6 +6,7 @@
     li {
         display: block;
         position: relative;
+        margin-right: 0.2rem;
     }
 
     li:last-child {
@@ -21,16 +22,23 @@
         color: $main-header-text-color;
         background: rgba(0, 10, 10, 0.6);
         transition: background 0.3s ease-in;
-        outline: none;
+        border-radius: 15px;
+        border: 0.8px solid $primary-items-color;
 
         i {
             padding: 0.2rem 1rem 0 0;
+            color: $primary-items-color;
+            transition: color 0.3s ease-in;
         }
     }
 
     a:focus,
     a:hover {
         background: $primary-items-color;
+
+        i {
+            color: $main-header-text-color;
+        }
     }
 
     a:focus {
@@ -52,8 +60,6 @@
         left: 0;
         z-index: 100;
         pointer-events: none;
-        border-bottom-left-radius: 0.3em;
-        border-bottom-right-radius: 0.3em;
         overflow: hidden;
     }
 

@@ -112,7 +112,8 @@ a {
 
 .navigation li {
   display: block;
-  position: relative; }
+  position: relative;
+  margin-right: 0.2rem; }
 
 .navigation li:last-child i {
   display: none; }
@@ -123,13 +124,19 @@ a {
   color: #DDE8F1;
   background: rgba(0, 10, 10, 0.6);
   transition: background 0.3s ease-in;
-  outline: none; }
+  border-radius: 15px;
+  border: 0.8px solid #379AD6; }
   .navigation a i {
-    padding: 0.2rem 1rem 0 0; }
+    padding: 0.2rem 1rem 0 0;
+    color: #379AD6;
+    transition: color 0.3s ease-in; }
 
 .navigation a:focus,
 .navigation a:hover {
   background: #379AD6; }
+  .navigation a:focus i,
+  .navigation a:hover i {
+    color: #DDE8F1; }
 
 .navigation a:focus {
   text-decoration: underline; }
@@ -151,8 +158,6 @@ a {
   left: 0;
   z-index: 100;
   pointer-events: none;
-  border-bottom-left-radius: 0.3em;
-  border-bottom-right-radius: 0.3em;
   overflow: hidden; }
 
 .navigation li:hover > ul {

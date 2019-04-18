@@ -4,20 +4,32 @@ title: Transitions-and-Animations
 ---
 
 <section>
-    <div class="title-center">
-      <h1 class="title">Transitions and Animations</h1>
-    </div>
-    <p>One evolution with <strong>CSS3</strong> was the ability to write behaviors for <strong>transitions and animations.</strong> Front end developers have been asking for the ability to design these interactions within HTML and CSS, without the use of JavaScript or Flash, for years. Now their wish has come true. With CSS3 transitions you have the potential to <strong>alter the appearance and behavior of an element whenever a state change occurs</strong>, such as when it is hovered over, focused on, active, or targeted. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank"><i class="fas fa-external-link-alt"></i> Read more...</a> Animations within CSS3 allow the <strong>appearance and behavior of an element to be altered in multiple keyframes.</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank"><i class="fas fa-external-link-alt"></i> Read more...</a> Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes.</p>
+  <div class="title-center">
+    <h1 class="title">Transitions and Animations</h1>
+  </div>
+  <p>One evolution with <strong>CSS3</strong> was the ability to write behaviors for <strong>transitions and
+      animations.</strong> Front end developers have been asking for the ability to design these interactions within
+    HTML and CSS, without the use of JavaScript or Flash, for years. Now their wish has come true. With CSS3 transitions
+    you have the potential to <strong>alter the appearance and behavior of an element whenever a state change
+      occurs</strong>, such as when it is hovered over, focused on, active, or targeted. <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank"><i
+        class="fas fa-external-link-alt"></i> Read more...</a> Animations within CSS3 allow the <strong>appearance and
+      behavior of an element to be altered in multiple keyframes.</strong> <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank"><i
+        class="fas fa-external-link-alt"></i> Read more...</a> Transitions provide a change from one state to another,
+    while animations can set multiple points of transition upon different keyframes.</p>
 </section>
 <section class="topics">
   <div class="title-center">
     <h4 class="title">Homeworks</h4>
   </div>
-  <ul>
-    {% for var in site.homeworks %}
-    {% if var.path contains 'transitions-and-animations' and var.type == 'description' %}
-      <li><a href="{{ site.baseurl }}{{ var.url }}"><i class="fas fa-key"></i> {{ var.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+  <div class="button-container">
+    <ul>
+      {% for var in site.homeworks %}
+      {% if var.path contains 'transitions-and-animations' and var.type == 'description' %}
+        <li><a href="{{ site.baseurl }}{{ var.url }}"><i class="fas fa-key"></i> {{ var.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </section>
