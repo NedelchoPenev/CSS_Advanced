@@ -61,7 +61,7 @@
     }
 
     & > ul ul {
-        display: block;
+        display: none;
         width: 13rem;
         position: absolute;
         top: 100%;
@@ -73,6 +73,7 @@
 
     li:hover > ul {
         pointer-events: all;
+        display: block;
     }
     
     li:hover > ul > li {
@@ -80,12 +81,12 @@
         opacity: 1;
     }
 
-    li:hover > ul > li:nth-child(2) { transition-delay: 0.08s; }
-    li:hover > ul > li:nth-child(3) { transition-delay: 0.16s; }
-    li:hover > ul > li:nth-child(4) { transition-delay: 0.24s; }
-    li:hover > ul > li:nth-child(5) { transition-delay: 0.32s; }
-    li:hover > ul > li:nth-child(6) { transition-delay: 0.40s; }
-    li:hover > ul > li:nth-child(7) { transition-delay: 0.48s; }
+    // li:hover > ul > li:nth-child(2) { transition-delay: 0.08s; }
+    // li:hover > ul > li:nth-child(3) { transition-delay: 0.16s; }
+    // li:hover > ul > li:nth-child(4) { transition-delay: 0.24s; }
+    // li:hover > ul > li:nth-child(5) { transition-delay: 0.32s; }
+    // li:hover > ul > li:nth-child(6) { transition-delay: 0.40s; }
+    // li:hover > ul > li:nth-child(7) { transition-delay: 0.48s; }
 
     & > ul ul a {
         padding: 0.5em 1.5em 0.5em 2em;

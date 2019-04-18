@@ -157,7 +157,7 @@ a {
   padding-top: 0.2em; }
 
 .navigation > ul ul {
-  display: block;
+  display: none;
   width: 13rem;
   position: absolute;
   top: 100%;
@@ -167,30 +167,13 @@ a {
   overflow: hidden; }
 
 .navigation li:hover > ul {
-  pointer-events: all; }
+  pointer-events: all;
+  display: block; }
 
 .navigation li:hover > ul > li {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1; }
-
-.navigation li:hover > ul > li:nth-child(2) {
-  transition-delay: 0.08s; }
-
-.navigation li:hover > ul > li:nth-child(3) {
-  transition-delay: 0.16s; }
-
-.navigation li:hover > ul > li:nth-child(4) {
-  transition-delay: 0.24s; }
-
-.navigation li:hover > ul > li:nth-child(5) {
-  transition-delay: 0.32s; }
-
-.navigation li:hover > ul > li:nth-child(6) {
-  transition-delay: 0.40s; }
-
-.navigation li:hover > ul > li:nth-child(7) {
-  transition-delay: 0.48s; }
 
 .navigation > ul ul a {
   padding: 0.5em 1.5em 0.5em 2em; }
