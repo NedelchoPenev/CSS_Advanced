@@ -110,6 +110,12 @@ a {
 .navigation ul {
   display: flex; }
 
+.navigation > ul {
+  display: flex; }
+  @media (max-width: 990px) {
+    .navigation > ul {
+      flex-direction: column; } }
+
 .navigation li {
   display: block;
   position: relative;
@@ -148,7 +154,7 @@ a {
   transition: opacity 0.2s ease-in, -webkit-transform 0.2s ease-out;
   transition: opacity 0.2s ease-in, transform 0.2s ease-out;
   transition: opacity 0.2s ease-in, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  padding-top: 0.5em; }
+  padding-top: 0.2em; }
 
 .navigation > ul ul {
   display: block;
@@ -189,6 +195,12 @@ a {
 .navigation > ul ul a {
   padding: 0.5em 1.5em 0.5em 2em; }
 
+@media (max-width: 990px) {
+  .navigation {
+    margin: 0 auto; }
+    .navigation > ul ul {
+      display: none; } }
+
 #toggle-main-nav-button {
   color: #FFF;
   display: none; }
@@ -220,8 +232,8 @@ section {
       transition: transform 0.5s ease-in;
       transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in; }
       section .img-container img:hover {
-        -webkit-transform: scale(1.8);
-                transform: scale(1.8); }
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4); }
 
 .skills .skill-elements {
   padding: 1rem 1.5rem; }

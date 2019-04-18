@@ -3,6 +3,14 @@
         display: flex;
     }
 
+    & > ul {
+        display: flex;
+
+        @include bp('tablet') {
+            flex-direction: column;
+        }
+    }
+
     li {
         display: block;
         position: relative;
@@ -49,7 +57,7 @@
         opacity: 0;
         transform: translateY(-2rem);
         transition: opacity 0.2s ease-in, transform 0.2s ease-out;
-        padding-top: 0.5em;
+        padding-top: 0.2em;
     }
 
     & > ul ul {
@@ -82,13 +90,22 @@
     & > ul ul a {
         padding: 0.5em 1.5em 0.5em 2em;
     }
+
+    @include bp('tablet') {
+        margin: 0 auto;
+    
+        @at-root & > ul ul {
+            display: none;
+        }
+    }
 }
+
+
 
 #toggle-main-nav-button {
     color: #FFF;
     display: none;
 }
-
 
 #toggle-main-nav {
     position: absolute;
