@@ -182,6 +182,8 @@ a {
   .navigation {
     margin: 0 auto; }
     .navigation > ul ul {
+      display: none; }
+    .navigation li:hover > ul {
       display: none; } }
 
 #toggle-main-nav-button {

@@ -95,7 +95,11 @@
     @include bp('tablet') {
         margin: 0 auto;
     
-        @at-root & > ul ul {
+        & > ul ul {
+            display: none;
+        }
+
+        li:hover > ul {
             display: none;
         }
     }
